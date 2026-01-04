@@ -6,16 +6,12 @@
 <link rel="icon" type="image/x-icon" href="bingo-icon.png">
 
 <style>
-  body::before {
+  body {
     margin: 0;
     background: #FFF;
+	background-attachment: fixed;
 	background-size: cover;
-    min-height: 100%;
-	content: "";
-	position: fixed;
-	inset: 0;
-	background: inherit;
-	z-index: -1;
+    height: 100vh;
   }
 
   .grid {
@@ -43,9 +39,8 @@
     pointer-events: none;
 
     /* Optional: zoom out slightly if pages are large */
-    transform: translateZ(0);
+    transform: scale(1);
     transform-origin: top left;
-	will-change: transform;
   }
 
   /* Optional overlay for labels */
